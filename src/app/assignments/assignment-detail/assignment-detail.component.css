@@ -1,0 +1,8 @@
+#bottom {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: red;
+    color: white;
+    border: 0px;
+}

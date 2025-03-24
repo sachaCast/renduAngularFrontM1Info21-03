@@ -1,0 +1,27 @@
+@if (assignmentTransmis) {
+    <mat-card>
+      <mat-card-content>
+        <mat-card-title>{{ assignmentTransmis.name }}</mat-card-title>
+        <mat-card-subtitle>{{ assignmentTransmis.dueDate | date: "dd/MM/yyyy" }}</mat-card-subtitle>
+
+        @if (!assignmentTransmis.submitted) {
+          <mat-checkbox (click)="onAssignmentRendu()">
+            Devoir rendu
+          </mat-checkbox>
+        }
+        <!--<nav><a routerLink="edit">-->
+          <button mat-stroked-button color="primary"
+            (click)="onClickEdit()"
+            [disabled]="!isAdmin()">
+            Edit
+          </button>
+        <!--</a></nav>-->
+
+        <button id="bottom" mat-flat-button color="warn" (click)="onDelete()">
+          DELETE ME
+        </button>
+      </mat-card-content>
+    </mat-card>
+  }
+
+  <router-outlet></router-outlet>

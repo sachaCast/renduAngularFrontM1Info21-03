@@ -1,0 +1,44 @@
+table, td, tr, thead, th {
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    border-radius: 10px;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+.submitted {
+    background-color: lightgreen;
+    border : 1px solid green;
+}
+
+.notSubmitted {
+    background-color: yellow;
+    color:red;
+    font-weight: bold;
+    border : 1px solid red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ajouterBtn {
+    align-self: self-end;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
